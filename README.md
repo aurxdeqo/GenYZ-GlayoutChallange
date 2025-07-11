@@ -66,8 +66,11 @@ model used
   ```bash
   # on ngspice terminal
   ngspice opampchallange.cir
-  run
-  plot db(v(outamp)/v(in))
-  plot 180/PI*phase(v(out)/v(in))
 
-The "run" command should've shown CMRR in dB, GBP in Hz, Output Swing in volts, and Power Consumption in watts
+- CMRR can be observed as follow
+  Update input sources for differential mode
+
+
+- Power consumption
+  Since the I and VDD is constant, the power consumption (I1+I2+I3+I4)*VDD = 451.8 uW (under 500uW)
+  
