@@ -68,6 +68,6 @@ model used
   ngspice opampchallange.cir
   run
   plot db(v(outamp)/v(in))
-  plot phase(v(outamp)/v(in))
+  plot 180/PI*phase(v(out)/v(in))
 
 The "run" command should've shown CMRR in dB, GBP in Hz, Output Swing in volts, and Power Consumption in watts
