@@ -45,7 +45,7 @@ model used
 - Start and run Jupyter notebook
   ```bash
   jupyter notebook
-- search for [Layout](Layout.ipynb) on jupyter notebook file, and run the file
+- search for [Layout](JupyterNotebook/Layout.ipynb) on jupyter notebook file, and run the file
 
 ---
 ## Testbench Using NGSpice
@@ -55,14 +55,14 @@ model used
   
 - Go to the folder
   ```bash
-  cd gLayout-genyz-team/NGspice
+  cd gLayout-genyz-team/NGSpice
   
-- Download [requirement](requirement.txt) for models
+- Download [requirement](NGSpice/requirement.txt) for models
   ```bash
   #  on linux terminal
   pip install -r requirements.txt
   
-- Download and run [testbench](testbench.cir) on ngspice
+- Download and run [testbench](NGSpice/testbench.cir) on ngspice
   ```bash
   # on ngspice terminal
   ngspice opampchallange.cir
