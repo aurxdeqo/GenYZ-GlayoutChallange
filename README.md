@@ -101,9 +101,17 @@ Our design have the design of 2 STAGE AMPLIFIER :
   (b) cmosn.asy
   (c) cmosp.asy
   export it in your LTSPICE to use the component models.
-- For Differential Input, we used it as a testbench here (VIN AC +1 and -1). Adiff +/- 95dB
+- For Differential Input, we used it as a testbench here (VIN AC +1 and -1). Adiff +/- 93.88dB
+  <p align="center">
+  <img src="images/Adiff.jpg" alt="Adiff" width="500"/>
+</p>
+<h4 align="center" style="font-size:16px;">Figure 8. CMRR Simulation (1) </h4>
 - For Common mode, use the same AC 1 0 (same amplitude and same phase for VIN AC). You will get Acommon-mode is +/- 10dB
-- As result you can count that CMRR = 20*log(Adiff/Acomm) = Adiff(dB) - Acomm(dB) = +/- 85dB
+  <p align="center">
+  <img src="images/Acom.jpg" alt="Acom" width="500"/>
+</p>
+<h4 align="center" style="font-size:16px;">Figure 9. CMRR Simulation (2) </h4>
+- As result you can count that CMRR = 20*log(Adiff/Acomm) = Adiff(dB) - Acomm(dB) = +/- 84/85 dB
 
 - Power consumption
   Since the I and VDD is constant, the power consumption (I1+I2+I3+I4)*VDD = 451.8 uW (under 500uW). You can see from the circuit.
