@@ -107,6 +107,10 @@ Our design have the design of 2 STAGE AMPLIFIER :
 </p>
 <h4 align="center" style="font-size:16px;">Figure 8. CMRR Simulation (1) </h4>
 - For Common mode, use the same AC 1 0 (same amplitude and same phase for VIN AC). You will get Acommon-mode is +/- 10dB
+  <p align="center">
+  <img src="images/Acom.jpg" alt="Acom" width="500"/>
+</p>
+<h4 align="center" style="font-size:16px;">Figure 9. CMRR Simulation (2) </h4>
 - As result you can count that CMRR = 20*log(Adiff/Acomm) = Adiff(dB) - Acomm(dB) = +/- 84/85 dB
 
 - Power consumption
