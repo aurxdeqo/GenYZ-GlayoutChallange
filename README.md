@@ -20,19 +20,20 @@ Build an OpAmp using any suitable architecture with the GF180 PDK with the follo
 
 Our design have the design of 2 STAGE AMPLIFIER :
 <p align="center">
-  <img src="images/Op-AmpCircuit.png" alt="Op-AmpCircuit" width="400"/>
+  <img src="images/LTSPICECircuitRev.jpg" alt="LTSPICECircuitRev" width="1000"/>
 </p>
 <h4 align="center" style="font-size:16px;">Figure 1. Operational Amplifier Design Using LTSpice</h4>
 
-<p align="center">
-  <img src="images/Gain.png" alt="Gain" width="400"/>
-</p>
-<h4 align="center" style="font-size:16px;">Figure 2. Operational Amplifier Gain</h4>
 
 <p align="center">
   <img src="images/Gain.png" alt="Gain" width="400"/>
+  <img src="images/Transient.png" alt="Transient" width="400"/>
 </p>
-<h4 align="center" style="font-size:16px;">Figure 3. Vout in Transient Mode for Output Swing</h4>
+<p align="center" style="font-size:16px;">
+  <b>Figure 2.</b> Operational Amplifier Gain &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Figure 3.</b> V<sub>out</sub> in Transient Mode for Output Swing
+</p>
+
 
 <p align="center">
   <img src="images/op.png" alt="op" width="400"/>
