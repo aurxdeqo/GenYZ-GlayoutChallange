@@ -57,7 +57,9 @@ Our design have the design of 2 STAGE AMPLIFIER :
 - Start and run Jupyter notebook
   ```bash
   jupyter notebook
-- search for [Layout](JupyterNotebook/Layout.ipynb) on jupyter notebook file, and run the file
+- search for [Layout](JupyterNotebook/opamp_challenge_final.ipynb) on jupyter notebook file, and run the file
+
+  Steps : (1) Open JupyterNotebook Folder -> (2) Open opamp_challenge_final.ipynb -> (3) Run the file to see display in Notebook and generate the .gds file to see in Klayout
 
 ---
 ## Testbench Using NGSpice
