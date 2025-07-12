@@ -1,13 +1,24 @@
-# Op-Amp Challange by GenYZ
+# Op-Amp Design Challenge by GenYZ
 ### *Track: Analog Automation AI/LLM using Glayout*
 ----
 ## Op Amp Design Using LTSpice
-model used
+MODELS OR COMPONENTS USED
 - NPN: DI_MMBT3904
-- NMOS: CMOSN
-- PMOS: CMOSP
-- technology: 180nm
+- NMOS: CMOSN technology: 180nm
+- PMOS: CMOSP technology: 180nm
+- Capacitor 5pF for Load, Capacitor 10uF for Coupling
 
+Objective:
+Build an OpAmp using any suitable architecture with the GF180 PDK with the following baseline specifications at a 5pF Capacitive Load:
+- Supply Voltage: 1.8V
+- DC Gain: >70 dB
+- CMRR: >85 dB
+- Phase Margin: >45 degrees
+- Power Dissipation: <500 µW
+- Unity Gain Bandwidth: >10 MHz
+- Output Swing: >1.0 Vpp
+
+Our design have the design of 2 STAGE AMPLIFIER :
 <p align="center">
   <img src="images/Op-AmpCircuit.png" alt="Op-AmpCircuit" width="400"/>
 </p>
