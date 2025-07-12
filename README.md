@@ -26,24 +26,24 @@ Our design have the design of 2 STAGE AMPLIFIER :
 
 
 <p align="center">
-  <img src="images/Gain.png" alt="Gain" width="400"/>
-  <img src="images/Transient.png" alt="Transient" width="400"/>
+  <img src="images/ACSIM.jpg" alt="Gain" width="400"/>
+  <img src="images/TRANSIM.jpg" alt="Transient" width="400"/>
 </p>
 <p align="center" style="font-size:16px;">
-  <b>Figure 2.</b> Operational Amplifier Gain &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Figure 2.</b> Bode Plot for AC Simulatiom &nbsp;&nbsp;&nbsp;&nbsp;
   <b>Figure 3.</b> V<sub>out</sub> in Transient Mode for Output Swing
 </p>
 
-
 <p align="center">
-  <img src="images/op.png" alt="op" width="400"/>
+  <img src="images/op.png" alt="Gain" width="400"/>
+  <img src="images/op2.png" alt="Transient" width="400"/>
 </p>
-<h4 align="center" style="font-size:16px;">Figure 4. DC Operating Point (1)</h4>
+<p align="center" style="font-size:16px;">
+  <b>Figure 4.</b> DC Operating Point (1) &nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Figure 5.</b> V<sub>out</sub> DC Operating Point (2)
+</p>
 
-<p align="center">
-  <img src="images/op2.png" alt="op2" width="400"/>
-</p>
-<h4 align="center" style="font-size:16px;">Figure 5. DC Operating Point (2)</h4>
+
 
 ---
 ## Layout Design Using Jupyter Notebook
