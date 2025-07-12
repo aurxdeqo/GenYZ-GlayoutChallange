@@ -71,11 +71,6 @@ Our design have the design of 2 STAGE AMPLIFIER :
   ```bash
   cd gLayout-genyz-team/NGSpice
   
-- Download [requirement](NGSpice/requirement.txt) for models
-  ```bash
-  #  on linux terminal
-  pip install -r requirements.txt
-  
 - Download and run [testbench](NGSpice/testbench.cir) on ngspice
   ```bash
   # on ngspice terminal
@@ -83,7 +78,6 @@ Our design have the design of 2 STAGE AMPLIFIER :
 
 - CMRR can be observed as follow
   Update input sources for differential mode
-
 
 - Power consumption
   Since the I and VDD is constant, the power consumption (I1+I2+I3+I4)*VDD = 451.8 uW (under 500uW)
