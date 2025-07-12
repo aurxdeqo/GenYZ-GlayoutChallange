@@ -58,8 +58,18 @@ Our design have the design of 2 STAGE AMPLIFIER :
   ```bash
   jupyter notebook
 - search for [Layout](JupyterNotebook/opamp_challenge_final.ipynb) on jupyter notebook file, and run the file
+  
+- When u run the .ipynb file, you should see the display as below.
+  <p align="center">
+  <img src="images/JUPYTERPIC.jpg" alt="JUPYTERPIC" width="500"/>
+</p>
+<h4 align="center" style="font-size:16px;">Figure 6. Display on Jupyter Notebook</h4>
 
-  Steps : (1) Open JupyterNotebook Folder -> (2) Open opamp_challenge_final.ipynb -> (3) Run the file to see display in Notebook and generate the .gds file to see in Klayout
+- When you open the generated .gds file after running the .ipynb file, you should see the display as below.
+  <p align="center">
+  <img src="images/KLAYOUTPIC.jpg" alt="KLAYOUTPIC" width="500"/>
+</p>
+<h4 align="center" style="font-size:16px;">Figure 7. Display on K-Layout </h4>
 
 ---
 ## Testbench Using NGSpice
@@ -76,9 +86,25 @@ Our design have the design of 2 STAGE AMPLIFIER :
   # on ngspice terminal
   ngspice opampchallange.cir
 
-- CMRR can be observed as follow
-  Update input sources for differential mode
+** Note about the Specification Checking
+[ Ngspice simulation still fulfill the below specification, but different from our original design in LTSPICE. It might be caused by the difference of MOSFET type/model. We showed you expected result from LTSPICE above already. You can see Ngspice simulation by the step above. ]
+
+- After running the .cir file, you should see some plots, showing you the parameter given for the specs. You can see Gain DC, Phase Margin (Phase at 0dB Gain + 180deg), Unity Gain Bandwith/Frequency from Bodeplot Magnitude and Phase. You can also see the Output swing from the plot .tran simulation.
+  
+- CMRR can be observed as follow (manually)
+  Update input sources for differential mode and common mode in LT SPICE
+  (1) Open opamp_design.asc file for LTSPICE in the NgSPICE folder
+  (2) Make sure you have the library TSMC 180 for 180nm Technology
+  Download the following files (*Credits from Sanjay Vihdyadharan on Youtube)
+  https://sanjayvidhyadharan.in/Downloads
+  (a) tsmc018.lib
+  (b) cmosn.asy
+  (c) cmosp.asy
+  export it in your LTSPICE to use the component models.
+- For Differential Input, we used it as a testbench here (VIN AC +1 and -1). Adiff +/- 95dB
+- For Common mode, use the same AC 1 0 (same amplitude and same phase for VIN AC). You will get Acommon-mode is +/- 10dB
+- As result you can count that CMRR = 20*log(Adiff/Acomm) = Adiff(dB) - Acomm(dB) = +/- 85dB
 
 - Power consumption
-  Since the I and VDD is constant, the power consumption (I1+I2+I3+I4)*VDD = 451.8 uW (under 500uW)
+  Since the I and VDD is constant, the power consumption (I1+I2+I3+I4)*VDD = 451.8 uW (under 500uW). You can see from the circuit.
   
