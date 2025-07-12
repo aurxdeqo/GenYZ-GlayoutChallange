@@ -105,14 +105,14 @@ Our design have the design of 2 STAGE AMPLIFIER :
 - For Differential Input, we used it as a testbench here (VIN AC +1 and -1). Adiff +/- 93.88dB
   
   <p align="center">
-  <img src="images/Adiff.jpg" alt="Adiff" width="500"/>
+  <img src="images/Adiffv.jpg" alt="Adiff" width="500"/>
 </p>
 <h4 align="center" style="font-size:16px;">Figure 8. CMRR Simulation (1) </h4>
 
 - For Common mode, use the same AC 1 0 (same amplitude and same phase for VIN AC). You will get Acommon-mode is +/- 10dB
   
   <p align="center">
-  <img src="images/Acom.jpg" alt="Acom" width="500"/>
+  <img src="images/Acomv.jpg" alt="Acom" width="500"/>
 </p>
 <h4 align="center" style="font-size:16px;">Figure 9. CMRR Simulation (2) </h4>
 
